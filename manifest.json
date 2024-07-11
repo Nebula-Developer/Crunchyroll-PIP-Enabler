@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Crunchyroll Picture-In-Picture Enabler",
+    "description": "Re-enables the Picture-In-Picture button on Crunchyroll's video player. @nebula-developer",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["*://*.crunchyroll.com/*"],
+            "js": ["content.js"],
+            "all_frames": true
+        }
+    ],
+    "permissions": ["activeTab", "scripting"]
+}
